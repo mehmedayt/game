@@ -91,8 +91,12 @@ export class Player{
                 }
             }       
         })
-       $("#canvas1").swipe({
+    }
+}
+$("#canvas1").swipe({
   swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+    const player = game.player;
+
     if (direction === "up") {
       console.log("Swipe up detected");
       // Handle swipe up
@@ -109,5 +113,3 @@ export class Player{
   }
 });
 
-    }
-}
