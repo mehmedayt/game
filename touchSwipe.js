@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // Set up swipe event handlers using TouchSwipe.js
-  $("#game-container").swipe({
-    swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+  $("#gameCanvas").swipe({
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
       if (direction === "up") {
         console.log("Swipe up detected");
         // Handle swipe up
@@ -18,6 +18,6 @@ $(document).ready(function() {
     }
   });
 
-  // Your game logic goes here...
+  // Your existing game logic...
 });
 
